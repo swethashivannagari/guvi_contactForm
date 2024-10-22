@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         if (response.ok) {
                             form.reset();
                             formStatus.innerHTML = '';
-                            // formStatus.style.display="none";
+                            formStatus.classList.remove("error");
                             modal.style.display = "block";
                             container.style.backgroundColor = "smokewhite";
                         }
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         error_1 = _a.sent();
                         console.log(error_1);
                         formStatus.style.display = "block";
-                        formStatus.innerHTML = "Something went wrong.<br>Try Again!!";
+                        formStatus.innerHTML = "Submission Failed.<br>Try Again!!";
                         formStatus.classList.add("error");
                         return [3 /*break*/, 4];
                     case 4: return [2 /*return*/];

@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (response.ok) {
             form.reset();
             formStatus.innerHTML = '';
-           // formStatus.style.display="none";
+            formStatus.classList.remove("error");
             modal.style.display = "block";
             container.style.backgroundColor = "smokewhite"
 
