@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         catch (error) {
           console.log(error);
           formStatus.style.display="block";
-          formStatus.innerHTML = `Something went wrong.<br>Try Again!!`;
+          formStatus.innerHTML = `Submission Failed.<br>Try Again!!`;
           formStatus.classList.add("error");
 
         }
