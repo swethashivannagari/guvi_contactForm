@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.container {
+    margin: 7% 13%;
+    display: flex;
+    gap: 8%;
+}
+
+.left-side p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.left-side {
+    flex: 5;
+    margin: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    gap: 10%;
+    margin: 20px 0px;
+}
+
+.content img {
+    width: 50px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.desc {
+    color: gray;
+    font-size: large;
+    margin-bottom: 2%;
+}
+
+.val {
+    padding: 0%;
+    margin-top: 0%;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+hr {
+    border: 0.6px solid rgb(234, 230, 230);
+}
+
+.location {
+    width: 40px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid rgb(25, 161, 25);
+    ;
+    outline: none;
+}
+
+.right-side {
+    flex: 4;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+        0 6px 20px rgba(0, 0, 0, 0.19);
+    padding: 20px 40px;
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+}
+
+.green {
+    color: rgb(25, 161, 25);
+}
+
+.red {
+    color: red;
+}
+
+.right-side button {
+    background-color: #1ed649;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4dd86b;
+}
+
+.right-side p {
+    color: rgb(70, 69, 69);
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.corner-decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('https://www.guvi.com/assets/CxqwidpJ-form.webp');
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.error {
+    color: white;
+    background-color: #e94723;
+    margin: 5px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.success-modal {
+    display: none;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    top: 10px;
+    width: 100%;
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    height: 300px;
+    text-align: center;
+}
+
+#closeModal {
+    padding: 10px 20px;
+    background-color: #1ed649;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.close-btn:hover {
+    background-color: #45a049;
+}
+
+.success-img {
+    width: 150px;
+    height: 100px;
+}
+
+@media (max-width: 1000px) {
+   .container{
+    flex-direction: column;
+    margin: 7% 8%;
+   }
+   .right-side,.left-side{
+    margin: 8% auto;
+    max-width: 800px;
+
+   }
+  }
